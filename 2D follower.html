@@ -2,6 +2,7 @@
 <html>
 <body>
 <button onclick=reset()> Reset</button>
+<button onclick=pause()> Pause</button>
 <button onclick=smartMove(mons[0])> Move avoiding obstacles</button>
 <p> </p>
 <canvas id="canvas" width="400" height="200" style="border:1px solid"
@@ -98,6 +99,11 @@ function reset() {
 	person.x = 30;
 	person.y = 10;
 	reDraw();
+}
+
+// pauses the game for 20 minutes // need to know how to do this forever
+function pause(){ 
+	setTimeout(function() {alert('You are pawsed for 20 minutes :3');},1250);
 }
 
 // return whether entity 1 intersects with entity 2
